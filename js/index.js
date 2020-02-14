@@ -119,6 +119,17 @@ var Qixi = function () {
     }
   };
   var boy = BoyWalk();
+  // 手机端pc端的判断
+  if ((navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i))) {
+    if (window.orientation === 90 || window.orientation === -90) {
+      console.log('横屏状态！');
+      //做相对应的处理
+      mainRun()
+    }
+  } else {
+    document.getElementById('mask').style.display = 'none'
+    mainRun()
+  }
   if (window.orientation === 90 || window.orientation === -90) {
     console.log('横屏状态！');
     //做相对应的处理
