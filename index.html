@@ -3,7 +3,41 @@
 
 <head>
   <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
-  <title>爱猪猪</title>
+  <title>小霞大人你好</title>
+  <style>
+    .mask {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      z-index: 9999;
+      background-color: #fff;
+    }
+
+    .mash__text {
+      color: #000;
+      font-size: 6vw;
+      height: 100%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    /*竖屏*/
+    @media screen and (orientation: portrait) {
+      .mask {
+        opacity: 1;
+      }
+    }
+
+    /*横屏*/
+    @media screen and (orientation: landscape) {
+      .mask {
+        opacity: 0;
+      }
+    }
+  </style>
   <link rel='stylesheet' href='./css/55c16d94000109f300000000.css' />
   <link rel='stylesheet' href='./css/55c16dab0001286100000000.css' />
   <link rel='stylesheet' href='./css/55c16dc00001fa1a00000000.css' />
@@ -16,6 +50,12 @@
 </head>
 
 <body>
+  <div class="mask">
+    <div class="mash__text">
+      <p>美丽的小霞大人，</p>
+      <p>请将手机横屏幕~</p>
+    </div>
+  </div>
   <div id='content'>
     <ul class='content-wrap'>
       <!-- 第一副画面 -->
@@ -80,14 +120,16 @@
         </ul>
         <!-- 慕课网logo图 -->
         <!--<div class="logo"></div>-->
-        <div class="target" style="width: 400px;left: -28%;">
+        <div class="target" style="width: 400px;left: -10%;">
           <pre>
-	                	天青色的烟雨
-	                	有我在等你
-	                	很多感动不挂嘴里
-	                	却在心里
-	                	甜在心里 爱在心里
-	                	——祝亲爱的猪猪小宝贝214快乐~
+            你是逃离废墟的路途茫茫
+
+            你是忽明忽暗的不悔时光
+            
+            你是一束生命的全力绽放
+            
+            你是认真书写的一笔一划
+	        ——祝小霞大人214快乐~
                 </pre>
 
         </div>
