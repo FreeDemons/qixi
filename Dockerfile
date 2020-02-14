@@ -11,4 +11,4 @@ COPY ./qixi.conf /etc/nginx/conf.d
 
 
 #EXPOSE向外暴露一个端口
-EXPOSE 7777
+EXPOSE 80
