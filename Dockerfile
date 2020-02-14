@@ -6,7 +6,7 @@ LABEL name = "qixi"
 LABEL version = '1.0'
 
 #把当前容器的所有页面拷贝到镜像的nginx指定文件夹里
-COPY ./ /usr/share/nginx/html/qixi
+COPY ./ /usr/share/nginx/html
 COPY ./qixi.conf /etc/nginx/conf.d
 
 
